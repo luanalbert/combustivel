@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Gasolina</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_content">
+            <div class="title">
+                <h2> Combústivel gasto por viagem </h2>
+            </div>
+
+            <div class="container_options">
+                <select name="" id="motorista" required>
+                    <option value="">----selecione o motorista----</option>
+                    <option value="leandro">Leandro</option>
+                    <option value="jair">Jair</option>
+                    <option value="joclecio">Joclécio </option>
+                    <option value="miller">Miller </option>
+                    <option value="irinaldo">Irinaldo </option>
+                </select>
+            </div>
+            
+           
+            <div class="containerInput">
+                <label for="gasolPrice"> Valor combústivel </label>
+                <input type="text" id="gasolPrice" placeholder="valor litro combústivel" required>
+            </div>
+
+            <div class="containerInput">
+                <label for="kmPorLitro"> KM por litro </label>
+                <input type="text" id="kmPorLitro" placeholder="KM por litro" disabled>
+            </div>
+
+            <div class="containerInput">
+                <label for="kmRodados"> KM Rodados </label>
+                <input type="text" id="kmRodados" placeholder="quilometros rodados" required>
+            </div>
+
+            <div class="container_resultado" > 
+                <p class="result"></p>
+            </div>
+           
+
+            <div class="container_button">
+                <button type="submit" id="resultado" onclick="calcular()"> Calcular </button>
+            </div>    
+
+            
+        </div>
+        
+        <div class="footer">
+            <a href="https://luanalbert.github.io/luanAlbert/" target="blank"> Desenvovido por Luan Albert</a>
+        </div>
+        
+    </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
